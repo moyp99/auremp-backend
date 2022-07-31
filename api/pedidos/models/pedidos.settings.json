@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "pedido",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "paid",
+        "unpaid",
+        "shipped",
+        "delivered"
+      ]
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "user": {
+      "type": "string"
+    },
+    "productos": {
+      "collection": "producto"
+    },
+    "direccion": {
+      "type": "richtext"
+    },
+    "payment_id": {
+      "type": "string"
+    },
+    "merchant_order_id": {
+      "type": "string"
+    },
+    "collection_status": {
+      "type": "string"
+    }
+  }
+}

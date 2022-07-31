@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordens",
+  "info": {
+    "name": "Orden",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productos": {
+      "collection": "producto"
+    },
+    "total": {
+      "type": "decimal"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "payment_id": {
+      "type": "string"
+    },
+    "merchant_order_id": {
+      "type": "string"
+    },
+    "collection_status": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "richtext"
+    },
+    "telefono": {
+      "type": "integer"
+    },
+    "descripcion": {
+      "type": "richtext"
+    }
+  }
+}
